@@ -1,0 +1,64 @@
+---
+swagger: "2.0"
+info:
+  description: "Created by AWS Lambda"
+  version: "2021-12-30T00:24:23Z"
+  title: "courserecommender-API"
+host: "em8yyej2z4.execute-api.us-west-2.amazonaws.com"
+basePath: "/default"
+schemes:
+- "https"
+paths:
+  /courserecommender:
+    get:
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+    post:
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /courserecommender/chatbot:
+    post:
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+definitions:
+  Empty:
+    type: "object"
+    title: "Empty Schema"
